@@ -1,0 +1,1 @@
+MyMoney V6.5.0 reminder-only test. Supports weekly/monthly/yearly bills, due/overdue display, manual confirmation and undo, confirmation history. It NEVER creates ledger transactions or deducts funds. Reminders stored separately in mymoney-v650-bills; not included in legacy JSON backup. Export full ledger JSON before upgrade. Test on separate GitHub Pages site only.

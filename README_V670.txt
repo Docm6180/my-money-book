@@ -1,0 +1,1 @@
+MyMoney V6.7.0 stability test. Adds read-only diagnostic summary, offline update notice, and cache version refresh. No ledger changes. Always export a private complete JSON backup before updating. Diagnostics are not a substitute for independent backups.

@@ -1,0 +1,1 @@
+MyMoney V6.0.6: Extended English translations for 187 static UI strings, dropdowns, hints, and placeholders. Keeps existing finance logic and localStorage. Test on the test repository only. Back up JSON first. Dynamic UI text and Traditional Chinese may still need further review.

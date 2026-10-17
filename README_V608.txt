@@ -1,0 +1,1 @@
+MyMoney V6.0.8 language test. Wizard now renders full sentences in the selected language. Back up JSON first. Only upload program files to the test repository; never upload personal financial JSON. Existing ledger localStorage key remains unchanged.

@@ -1,0 +1,90 @@
+(()=>{'use strict';
+const en={"MyMoney V6.0.5 · 测试版": "MyMoney V6.0.6 · Test version", "我的记账本": "MyMoney", "MYR 马币 · 本机保存 · 独立负债与利息计算": "MYR · Stored on this device · Debt and interest tracking", "🔒 数据只保存在当前浏览器/设备。清除浏览器数据或换手机前，请先到「备份」导出 JSON 文件。": "🔒 Data is stored only in this browser/device. Export a JSON backup before clearing browser data or changing phones.", "总览": "Overview", "记账与账户": "Records & Accounts", "负债管理": "Debt Management", "分析": "Analytics", "备份与导出": "Backup & Export", "我的": "Settings", "MYMONEY · 财务总览": "MYMONEY · Financial Overview", "今天也来管理好每一笔钱": "Manage your money with confidence", "你的收入、支出与负债，一眼掌握。": "See your income, expenses and debts at a glance.", "◉ 隐藏金额": "◉ Hide amounts", "＋ 记一笔": "＋ Add Record", "⇄ 转账": "⇄ Transfer", "▣ 记录还款": "▣ Record Repayment", "本月收入": "Monthly Income", "本月总流出（支出＋还款）": "Monthly Outflow (Expenses + Repayments)", "本月收入－总流出": "Net Cash Flow", "剩余总负债": "Total Outstanding Debt", "本月收支概况": "Monthly Summary", "暂无本月记录": "No records this month", "最近交易": "Recent Transactions", "暂无交易": "No transactions", "账户余额概览": "Account Balance Overview", "暂无账户": "No accounts", "负债概览": "Debt Overview", "暂无负债": "No debts", "新增记录": "New Entry", "类型": "Type", "支出": "Expense", "收入": "Income", "内部转账": "Internal Transfer", "转账只移动账户余额，不计入收入或支出。": "Transfers move money between accounts and do not count as income or expenses.", "新增内部转账": "New Internal Transfer", "转出账户": "From Account", "转入账户": "To Account", "金额（RM）": "Amount (RM)", "转账日期": "Transfer Date", "备注（可选）": "Notes (optional)", "保存转账": "Save Transfer", "转账仅在账户之间移动余额，不计入收入或支出。手续费请另外记为支出并选择付款账户。": "Transfers only move money between accounts. Record any transfer fee separately as an expense.", "🎨 自定义收支类别与图标": "🎨 Custom Categories & Icons", "原有类别继续保留。你可以新增自己的收入／支出类别并选择图标，删除类别不会删除旧交易。": "Existing categories are kept. Add your own income or expense categories and icons. Deleting a category does not delete past transactions.", "类别类型": "Category Type", "类别名称": "Category Name", "选择图标": "Choose Icon", "选择品牌图标（银行／电子钱包／购物等）": "Choose Brand Icon (bank/e-wallet/shopping)", "上传自己的图标": "Upload Custom Icon", "恢复默认图标": "Reset to Default Icon", "当前图标：🛒": "Current Icon: 🛒", "新增类别": "Add Category", "新增收支记录": "Add Income / Expense", "日期": "Date", "类别": "Category", "餐饮": "Food & Dining", "交通": "Transport", "购物": "Shopping", "房租/房贷": "Rent / Mortgage", "水电网费": "Utilities & Internet", "医疗": "Healthcare", "薪水": "Salary", "奖金": "Bonus", "生意收入": "Business Income", "家庭": "Family", "其他": "Other", "关联账户（可选）": "Linked Account (optional)", "不关联账户（旧版模式）": "No Linked Account (Legacy Mode)", "付款方式": "Payment Method", "现金": "Cash", "银行卡": "Bank Card", "信用卡": "Credit Card", "银行转账": "Bank Transfer", "电子钱包": "E-wallet", "保存记录": "Save Record", "取消编辑": "Cancel Edit", "交易记录": "Transactions", "月份筛选": "Filter by Month", "类型筛选": "Filter by Type", "全部": "All", "账户管理与余额": "Accounts & Balances", "在这里新增银行、现金及电子钱包账户。每笔收入、支出或转账都可选择对应账户。": "Add bank, cash and e-wallet accounts here. Link income, expenses or transfers to the appropriate account.", "新增 / 编辑账户": "Add / Edit Account", "账户名称": "Account Name", "账户类别": "Account Type", "银行": "Bank", "启用时余额（RM）": "Opening Balance (RM)", "账户图标": "Account Icon", "使用默认图标": "Use Default Icon", "🏦 默认图标": "🏦 Default Icon", "备注": "Notes", "首次建立账户时填当前实际余额。以前的收支记录不会自动归属到新账户，避免重复计算。日后可在收支记录中选择账户。": "Enter your current actual balance when creating an account. Earlier transactions are not assigned automatically, to avoid double-counting. You can link accounts to future records.", "保存账户": "Save Account", "账户余额": "Account Balance", "转账记录": "Transfer History", "暂无转账": "No transfers", "新增负债 / 负债清单": "Add Debt / Debt List", "新增还款记录 / 详细还款": "Record Repayment / Details", "新增负债": "Add Debt", "负债名称": "Debt Name", "负债类别": "Debt Type", "个人借款": "Personal Borrowing", "个人贷款": "Personal Loan", "汽车贷款": "Car Loan", "房屋贷款": "Home Loan", "＋ 新增类别": "＋ Add Category", "保存新类别": "Save New Category", "取消": "Cancel", "原始欠款（RM）": "Original Amount Owed (RM)", "记录日期": "Record Date", "负债银行／平台图标（可选）": "Debt Bank / Platform Icon (optional)", "银行、信用卡、车贷、房贷等都可选择图标；不会改变欠款或还款计算。": "Choose an icon for bank, credit card, car loan or mortgage debts. Icons do not affect calculations.", "V5.8 · 独立负债计算设置": "V5.8 · Debt Calculation Settings", "计算方式": "Calculation Method", "无利息": "No Interest", "递减余额利息（按月估算）": "Reducing Balance Interest (Monthly Estimate)", "固定利息（Flat Rate）": "Flat Rate Interest", "信用卡按月计息（估算）": "Credit Card Monthly Interest (Estimate)", "年利率（%）": "Annual Interest Rate (%)", "贷款总期数（月）": "Total Loan Term (Months)", "计划每月还款（RM）": "Planned Monthly Repayment (RM)", "预计首期还款日": "Estimated First Repayment Date", "固定利息需填写总期数；递减余额及信用卡采用年利率 ÷ 12 的月度估算，可能与银行按日计息、费用和账单不同。旧负债默认无利息。": "Flat rate requires the total term. Reducing balance and credit card estimates use annual rate ÷ 12; actual bank charges may differ. Older debts default to no interest.", "保存负债": "Save Debt", "V5.8：每笔负债可选择独立计息方式。旧记录默认无利息；实际还款会从选定账户扣除，不重复生成普通支出。": "V5.8: Each debt can have its own interest method. Older records default to no interest. Repayments are deducted from the selected account without creating duplicate expenses.", "负债清单": "Debt List", "独立还款计划与详细明细": "Repayment Schedule & Details", "点击负债清单中的「还款计划」查看该笔贷款的预计逐期明细。预计计划不会自动扣款。": "Select Repayment Schedule from a debt to see estimated installments. The schedule does not make automatic payments.", "请选择一笔负债查看": "Select a debt to view", "新增还款记录": "Record Repayment", "选择负债": "Select Debt", "请先新增负债": "Add a debt first", "还款日期": "Repayment Date", "还款金额（RM）": "Repayment Amount (RM)", "本次利息（RM）": "Interest This Payment (RM)", "本次偿还本金（RM）": "Principal Repaid (RM)", "扣款账户": "Payment Account", "不关联账户（兼容旧记录）": "No Linked Account (Legacy Records)", "选择账户后，保存还款会自动扣除该账户余额；会计入总览的本月总流出，但不会自动生成另一笔普通支出。": "Repayments deduct from the selected account and count toward monthly outflow, without creating a duplicate expense.", "保存还款": "Save Repayment", "暂无还款记录": "No repayment records", "📒 每笔负债详细还款记录": "📒 Detailed Repayment History", "选择一笔负债，查看历次实际还款的日期、金额、本金、利息、还款后余额、付款账户和备注。历史记录只供查看，不会重复扣款。": "Select a debt to view repayment dates, amounts, principal, interest, remaining balance, payment account and notes. Viewing history does not deduct money again.", "查看哪笔负债": "Debt to View", "请选择负债": "Select a debt", "请选择一笔负债查看详细还款记录": "Select a debt to view its repayment history", "📊 收支分析": "📊 Income & Expense Analysis", "选择月份": "Select Month", "分析类型": "Analysis Type", "总流出（支出＋还款）": "Total Outflow (Expenses + Repayments)", "普通支出": "Expenses Only", "每日收支日历": "Daily Cash Flow Calendar", "周一　 周二　 周三　 周四　 周五　 周六　 周日": "Mon　 Tue　 Wed　 Thu　 Fri　 Sat　 Sun", "红色代表当日净流出，绿色代表净收入；点击日期可查看明细。": "Red means net outflow; green means net income. Select a date for details.", "类别占比": "Category Breakdown", "每日趋势": "Daily Trend", "数据备份与恢复": "Backup & Restore", "JSON 文件会包含收支、负债、还款、账户和转账记录，可用于恢复完整数据。建议定期备份，并把文件保存在安全的位置。": "A JSON backup includes income, expenses, debts, repayments, accounts and transfers. Back up regularly and store the file securely.", "下载完整备份（JSON）": "Download Full Backup (JSON)", "导入备份（JSON）": "Import Backup (JSON)", "导出交易记录": "Export Transactions", "将收支记录导出为 CSV，可用 Excel 打开。此文件只包含日常收入和支出，不包含负债还款或内部转账记录。": "Export income and expenses as CSV for Excel. Debt repayments and internal transfers are not included.", "下载交易记录（CSV）": "Download Transactions (CSV)", "清除本机数据": "Clear Local Data", "此操作会删除当前浏览器保存的全部记录（包括账户和转账），且无法撤销。请先备份。": "This permanently deletes all records stored in this browser, including accounts and transfers. Back up first.", "清除全部数据": "Delete All Data", "使用提示": "Usage Tips", "只在当前浏览器/设备保存，不会自动同步到其他手机。": "Data stays in this browser/device and does not automatically sync to another phone.", "换手机、换浏览器或清除浏览数据前，请先下载 JSON 备份。": "Download a JSON backup before changing phones, browsers or clearing browser data.", "关联扣款账户的还款会减少负债与账户余额，并计入总览的本月总流出，但不会自动生成普通支出记录。": "Repayments linked to an account reduce debt and account balance, and count toward monthly outflow without creating another expense.", "若要在手机上安装为应用，需要将网页发布到支持 HTTPS 的网站，再用浏览器「添加到主屏幕」。": "To install on your phone, publish the site over HTTPS and choose Add to Home Screen in your browser.", "我的记账本 V5.8 · 个人使用工具 · 请定期备份数据": "MyMoney V6.0.6 · Personal Finance · Back Up Regularly", "主菜单": "Main Menu", "隐藏或显示首页金额": "Hide or show home amounts", "例如：Maybank 转入 TNG": "e.g. Maybank to TNG", "例如：停车费": "e.g. Parking", "例如：午餐": "e.g. Lunch", "例如：Maybank 储蓄账户": "e.g. Maybank Savings Account", "可选": "Optional", "例如：Maybank 信用卡": "e.g. Maybank Credit Card", "输入新类别，例如：装修贷款": "Enter a new category, e.g. Renovation Loan", "例如 60": "e.g. 60", "例如 1000": "e.g. 1000", "例如：每月还款日": "e.g. Monthly repayment date", "可自动估算后修改": "Can be edited after estimation", "例如：10月份月供": "e.g. October installment"};
+const extra={
+'总览':'Overview','记账':'Records','负债':'Debts','报表':'Reports','我的':'Settings','新增收支记录':'Add Income / Expense','关联账户':'Linked Account','暂无转账':'No transfers','编辑':'Edit','删除':'Delete','保存':'Save','收入':'Income','支出':'Expense','银行':'Bank','电子钱包':'E-wallet','现金':'Cash','其他':'Other','餐饮':'Food & Dining','交通':'Transport','购物':'Shopping','房租/房贷':'Rent / Mortgage','水电网费':'Utilities & Internet','医疗':'Healthcare','薪水':'Salary','奖金':'Bonus','生意收入':'Business Income','家庭':'Family','银行卡':'Bank Card','信用卡':'Credit Card','银行转账':'Bank Transfer','个人借款':'Personal Borrowing','个人贷款':'Personal Loan','汽车贷款':'Car Loan','房屋贷款':'Home Loan','全部':'All','默认图标':'Default Icon','可选':'Optional','转账':'Transfer','还款':'Repayment','还款计划':'Repayment Schedule','详情':'Details','余额':'Balance','利息':'Interest','本金':'Principal','删除记录':'Delete Record','取消':'Cancel','确认':'Confirm','新增':'Add','负债清单':'Debt List','无利息':'No Interest','日期':'Date','金额':'Amount','备注':'Notes','付款方式':'Payment Method','选择图标':'Choose Icon','上传自己的图标':'Upload Custom Icon','使用默认图标':'Use Default Icon','保存账户':'Save Account','保存记录':'Save Record','保存还款':'Save Repayment','保存负债':'Save Debt','设置完成':'Setup Complete','第一个账户 / First account':'First Account','语言 / Language':'Language','货币 / Currency':'Currency','主题 / Theme':'Theme','完成 / Finish':'Finish','选择语言 / Choose language':'Choose Language','使用语言':'Language','默认货币 / Currency':'Preferred Currency','外观主题 / Theme':'Appearance Theme','建立第一个账户（可跳过）':'Create Your First Account (Optional)','账户名称（可留空）':'Account Name (Optional)','期初余额（MYR）':'Opening Balance (MYR)','账户类别':'Account Type','稍后设置':'Set Up Later','下一步 / Next':'Next','完成 / Finish':'Finish','上一步':'Back','下一步':'Next','⚙ 我的 · 设置与备份':'⚙ Settings & Backup','⚙ Me · Settings & backup':'⚙ Settings & Backup','🌐 语言与货币 / Language & currency':'🌐 Language & Currency','语言 / Language':'Language','默认货币 / Currency':'Preferred Currency','查看首次使用向导 / Setup guide':'View Setup Guide','简体中文':'Simplified Chinese','马来西亚令吉':'Malaysian Ringgit'};
+Object.assign(en,extra);
+const tw={'记账与账户':'記帳與帳戶','负债管理':'負債管理','备份与导出':'備份與匯出','总览':'總覽','分析':'分析','我的':'我的','新增收支记录':'新增收支紀錄','关联账户（可选）':'關聯帳戶（選填）','不关联账户（旧版模式）':'不關聯帳戶（舊版模式）','餐饮':'餐飲','交通':'交通','购物':'購物','房租/房贷':'房租／房貸','水电网费':'水電網路費','医疗':'醫療','薪水':'薪資','奖金':'獎金','生意收入':'營業收入','家庭':'家庭','其他':'其他','银行卡':'銀行卡','信用卡':'信用卡','银行转账':'銀行轉帳','电子钱包':'電子錢包','银行':'銀行','现金':'現金','全部':'全部','月份筛选':'月份篩選','类型筛选':'類型篩選','保存记录':'儲存紀錄','交易记录':'交易紀錄','账户类别':'帳戶類別','新增 / 编辑账户':'新增／編輯帳戶','账户余额':'帳戶餘額','转账记录':'轉帳紀錄','暂无转账':'暫無轉帳','我的记账本':'我的記帳本','总览':'總覽','使用提示':'使用提示','清除全部数据':'清除全部資料'};
+// V6.0.7: Translate financial labels rendered dynamically, including mixed-value lines.
+Object.assign(en,{
+'首页':'Home','记账':'Records','负债':'Debts','报表':'Reports','我的':'Settings',
+'本月普通支出':'Monthly Expenses','本月负债还款':'Monthly Debt Repayments','本月总流出':'Monthly Total Outflow',
+'本月收入':'Monthly Income','本月支出':'Monthly Expenses','本月总支出':'Monthly Total Expenses',
+'本月收入减支出':'Income Less Expenses','本月收入减总流出':'Income Less Total Outflow',
+'本月结余':'Monthly Net Balance','本月净结余':'Monthly Net Balance',
+'账户总余额（不扣除负债）':'Total Account Balance (Excluding Debts)',
+'全部账户余额':'All Account Balances','账户总余额':'Total Account Balance',
+'原始本金':'Original Principal','已还本金':'Principal Repaid','剩余欠款':'Outstanding Balance',
+'记录日期':'Record Date','记录时间':'Recorded On','还款日期':'Repayment Date',
+'查看还款计划':'View Repayment Schedule','查看还款明细':'View Repayment Details',
+'负债还款':'Debt Repayments','合计':'Total','暂无记录':'No Records',
+'本月暂无对应记录':'No matching records this month','本月暂无记录':'No records this month',
+'我的设置 · 主题与使用帮助':'Settings · Appearance & Help',
+'蓝白色':'Blue & White','清新绿':'Fresh Green','深色':'Dark',
+'选择语言':'Choose Language','选择主题':'Choose Theme',
+'主题只改变外观，不影响财务记录。':'Themes change appearance only, not financial records.',
+'记账':'Records','负债':'Debts','报表':'Reports','备份':'Backup',
+'定期导出':'Export Regularly','请定期备份数据':'Back Up Regularly',
+'查看还款计划':'View Repayment Schedule','信用卡月息':'Credit Card Monthly Interest',
+'信用卡按月计息':'Credit Card Monthly Interest','没有记录':'No Records',
+'已选择':'Selected','月供':'Monthly Payment','每月还款':'Monthly Repayment',
+'账户余额':'Account Balance','总余额':'Total Balance',
+'本月总流出（支出＋还款）':'Total Monthly Outflow (Expenses + Repayments)',
+'新增账户':'Add Account','转账记录':'Transfer History',
+'交易记录':'Transactions','还款记录':'Repayment History',
+'还款后余额':'Balance After Repayment','本次还款':'This Repayment',
+'总欠款':'Total Outstanding Debt','总负债':'Total Debts',
+'类别占比':'Category Breakdown','每日趋势':'Daily Trend',
+'今日':'Today','明细':'Details','总览':'Overview',
+'信用卡':'Credit Card','个人借款':'Personal Borrowing','个人贷款':'Personal Loan',
+'汽车贷款':'Car Loan','房屋贷款':'Home Loan','无利息':'No Interest',
+'递减余额计息':'Reducing Balance Interest','固定利息':'Flat Interest',
+'新增收支记录':'Add Income / Expense','新建记录':'New Entry',
+'当前浏览器':'Current Browser','数据只保存在当前浏览器/设备':'Data is stored only in this browser/device',
+'清除浏览器数据或换手机前，请先到「备份」导出 JSON 文件。':'Export a JSON backup before clearing browser data or switching phones.',
+'账户总余额（不扣除负债）':'Total Account Balance (Excluding Debts)',
+'剩余本金':'Remaining Principal','已还金额':'Amount Repaid',
+'没有数据':'No Data','未知账户':'Unknown Account',
+'查看还款计划':'View Repayment Schedule',
+'我的记账本 V5.8 · 个人使用工具 · 请定期备份数据':'MyMoney V6.0.7 · Personal Finance · Back Up Regularly',
+'①「记账」新增收入、支出和账户转账。②「负债」分别建立贷款及记录实际还款。③「报表」查看收支分析。④「备份」定期导出 JSON；换手机前务必保存备份文件。⑤ 资料仅储存在当前浏览器，不会自动同步到其他手机。':'① Use Records for income, expenses and transfers. ② Use Debts for loans and repayments. ③ Use Reports for analysis. ④ Export JSON backups regularly. ⑤ Data is stored only in this browser and does not sync automatically.',
+'在浏览器清除网站数据或卸载 App 前，请先导出 JSON。不要把个人财务 JSON 上传至公开 GitHub。':'Export a JSON backup before clearing browser data or uninstalling the app. Never upload personal financial backups to public GitHub.'
+});
+Object.assign(en,{
+'本月总流出包含所有负债还款（无论是否关联账户）。如信用卡消费已记入普通支出，再将还款计入总流出可能重复计算；此处用于观察资金流出，不代表会计意义的净费用。':'Monthly Total Outflow includes all debt repayments, whether or not they are linked to an account. If credit card spending has already been recorded as an expense, counting the repayment again may double-count the outflow. This figure tracks cash outflow and is not necessarily the same as accounting expenses.',
+'目前账本计算仍固定 MYR；选择其他货币不会换算现有金额。':'Your ledger still uses MYR. Selecting another currency does not convert existing amounts.',
+'仅新用户可在此建立账户；已有数据时不会新增或修改账户。':'Only new users can create an account here. Existing accounts and records will not be changed.'
+});
+const fragments=Object.entries(en).filter(([k,v])=>/[\u3400-\u9fff]/.test(k)&&v&&k!==v).sort((a,b)=>b[0].length-a[0].length);
+function mixedEnglish(str){
+ if(!/[\u3400-\u9fff]/.test(str))return str;
+ let out=str;
+ // Translate labels inside composed strings while leaving user-entered names unchanged.
+ for(const [cn,english] of fragments){if(cn.length>=2&&out.includes(cn))out=out.split(cn).join(english)}
+ return out;
+}
+const reverse=Object.fromEntries(Object.entries(en).map(([k,v])=>[v,k]));
+const base=new WeakMap();const known=new Set([...Object.keys(en),...Object.keys(tw)]);
+function translateText(n,lang){if(!n.parentElement||['SCRIPT','STYLE','TEXTAREA'].includes(n.parentElement.tagName))return;
+ const parent=n.parentElement;if(parent.closest('[contenteditable="true"],#v604Wizard'))return;
+ let original=base.get(n);if(original===undefined){original=n.nodeValue;base.set(n,original)}
+ const trimmed=original.trim();if(!trimmed)return;
+ const chinese=reverse[trimmed]||trimmed;
+ const value=lang==='en'?(en[chinese]||en[trimmed]||mixedEnglish(trimmed)):lang==='zh-TW'?(tw[chinese]||chinese):chinese;
+ if(value===undefined)return;
+ const next=original.replace(trimmed,value);
+ if(n.nodeValue!==next)n.nodeValue=next;
+}
+const attrBase=new WeakMap();
+function process(root){const lang=JSON.parse(localStorage.getItem('mymoney-v604-preferences')||'{}').lang||'zh-CN';document.documentElement.lang=lang;
+ const nodes=[];if(root.nodeType===3)nodes.push(root);else if(root.nodeType===1){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);while(w.nextNode())nodes.push(w.currentNode)}
+ for(const n of nodes)translateText(n,lang);
+ const elements=root.nodeType===1?[root,...Array.from(root.querySelectorAll('[placeholder],[aria-label],[title]')).filter(el=>!el.closest('#v604Wizard'))]:[];
+ for(const el of elements){let m=attrBase.get(el);if(!m){m={};attrBase.set(el,m)}for(const a of ['placeholder','aria-label','title']){if(!el.hasAttribute(a))continue;if(!(a in m))m[a]=el.getAttribute(a);const orig=m[a];const replacement=lang==='en'?(en[orig]||mixedEnglish(orig)):lang==='zh-TW'?tw[orig]:undefined;const target=lang==='zh-CN'?orig:(replacement||orig);if(el.getAttribute(a)!==target)el.setAttribute(a,target)}}
+}
+let busy=false;const refresh=()=>{if(busy)return;busy=true;try{process(document.body)}finally{busy=false}};
+refresh();
+const obs=new MutationObserver(muts=>{if(busy)return;let changed=false;for(const m of muts){if(m.type==='childList'&&m.addedNodes.length)changed=true;else if(m.type==='characterData')changed=true}if(changed)refresh()});
+obs.observe(document.body,{childList:true,subtree:true,characterData:true});
+const langSelect=document.getElementById('v604Language');if(langSelect)langSelect.addEventListener('change',()=>queueMicrotask(refresh));
+window.addEventListener('pageshow',refresh);
+})();

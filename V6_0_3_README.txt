@@ -1,0 +1,1 @@
+MyMoney V6.0.3 TEST - mobile home, quick actions, five-tab mobile navigation, My settings/backup. Keeps original financial localStorage key and logic. Test on separate GitHub Pages repo. Export JSON before any update. No real financial JSON in public GitHub.

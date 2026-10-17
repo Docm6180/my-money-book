@@ -1,0 +1,1 @@
+MyMoney V6.9.0 release-readiness test. Based on tested V6.7.0. Adds read-only relationship and duplicate-ID checks, a 5,000-record synthetic benchmark, and a privacy-minimized diagnostic download. Does not change financial data or existing backup formats. Export a complete private JSON backup before deployment. Test only in my-money-v6-test; do not overwrite V5.8 production.

@@ -1,0 +1,1 @@
+MyMoney V6.4.0 Phase 1 test: quick income/expense, reusable transaction templates, read-only search. Templates stored separately in mymoney-v640-templates. Existing ledger schema and calculation logic unchanged. Export JSON before upgrading. Test on my-money-v6-test only.

@@ -1,0 +1,1 @@
+MyMoney V6.3.0 local snapshot test. Preserve localStorage key mymoney-local-v1. Up to six local snapshots, manual snapshot, preview, JSON download, restore with pre-restore safety copy. Snapshots are stored in same browser and are not off-device backups. Back up JSON externally before upgrade. Test only on my-money-v6-test.

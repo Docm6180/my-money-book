@@ -1,0 +1,1 @@
+MyMoney V6.0.7 language fix test. English dynamic financial labels, navigation, help, debts and charts expanded. Financial calculations and localStorage keys unchanged. Test only; back up JSON before upgrade. Some custom user-entered names remain Chinese by design.

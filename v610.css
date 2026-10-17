@@ -1,0 +1,14 @@
+/* Security overlay conceals app UI; not encryption. */
+.v610-locked body> :not(#v610Lock){visibility:hidden!important}
+#v610Lock{position:fixed;inset:0;z-index:2147483647;background:#eef3fa;display:flex;align-items:center;justify-content:center;padding:20px;color:#14263f}
+#v610Lock[hidden]{display:none!important}
+#v610Lock .v610-card{width:min(100%,380px);background:white;border:1px solid #d5e0ee;border-radius:18px;padding:24px;box-shadow:0 12px 38px #11223318}
+#v610Lock input{font-size:22px;letter-spacing:6px;text-align:center}
+#v610Lock button,#v610Panel button{padding:10px 14px;border:0;border-radius:10px;background:#245ba5;color:white;font-weight:600;cursor:pointer}
+#v610Lock button:disabled{opacity:.5}
+#v610Panel{border:1px solid #d5e0ee;border-radius:14px;padding:16px;margin:12px 0;background:var(--card,#fff)}
+#v610Panel h3{margin:0 0 12px}
+#v610Panel .v610-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+#v610Panel .v610-row button{font-size:13px}
+#v610Panel .v610-msg{font-size:12px;line-height:1.6;color:var(--muted,#586579)}
+.v610-privacy .metric strong,.v610-privacy .amount,.v610-privacy .debt-balance,.v610-privacy #home strong,.v610-privacy #accountTotals strong,.v610-privacy #accountList .amount,.v610-privacy #debtList .amount,.v610-privacy #homeDebts strong{filter:blur(8px)!important;user-select:none!important}
