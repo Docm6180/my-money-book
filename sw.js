@@ -1,4 +1,4 @@
-const CACHE='mymoney-local-v5-4-2';
+const CACHE='mymoney-local-v5-5-1';
 const FILES=['./','./index.html','./manifest.json','./icon.svg','./upgrade-v5.html'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mymoney-local-')&&k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]))});
