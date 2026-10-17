@@ -1,0 +1,1 @@
+MyMoney V7.0.0 homepage version label correction. Updates v60.js heading/subtitle, document title, and PWA cache name. No localStorage keys, financial records, or business logic changed. Backup JSON before deployment. Upload extracted files to GitHub root.
