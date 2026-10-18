@@ -1,0 +1,14 @@
+/* V7.2 monthly budget; no global mutation observers */
+.v720-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.v720-card{border:1px solid var(--line,#ddd);border-radius:12px;padding:12px;background:var(--card,#fff)}.v720-card small{display:block;color:var(--muted,#666);margin-bottom:6px}.v720-card strong{font-size:20px;overflow-wrap:anywhere}.v720-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(92px,130px);gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line,#ddd)}.v720-row label{overflow-wrap:anywhere}.v720-bar{height:9px;border-radius:20px;background:var(--line,#ddd);overflow:hidden;margin-top:7px}.v720-fill{height:100%;background:#16835d;border-radius:20px}.v720-fill.warn{background:#d3941d}.v720-fill.over{background:#d44b4b}.v720-muted{font-size:12px;color:var(--muted,#666);line-height:1.5}.v720-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:end}.v720-tools>label{display:grid;gap:5px;flex:1;min-width:145px}.v720-tools input{max-width:100%}
+@media(max-width:599px){.tabs{grid-template-columns:repeat(4,minmax(0,1fr))!important;row-gap:2px!important}.tabs button{min-height:36px!important;padding:5px 2px!important;font-size:10px!important}.wrap{padding-bottom:145px!important}.v720-card strong{font-size:17px}}
+
+.v720-row{grid-template-columns:minmax(0,1fr) minmax(88px,120px) auto}.v720-remove{padding:7px 9px;font-size:12px}.v720-add{margin-top:16px}.v720-add>label{display:block;margin-bottom:7px}.v720-add-row{display:flex;gap:8px;flex-wrap:wrap}.v720-add-row input{flex:1;min-width:130px;max-width:100%}@media(max-width:400px){.v720-row{grid-template-columns:minmax(0,1fr) 92px auto;gap:5px}.v720-remove{padding:6px;font-size:11px}}
+
+/* Stage 2: editable custom category names */
+.v720-row{grid-template-columns:minmax(0,1fr) minmax(88px,120px) auto auto}.v720-edit{padding:7px 9px;font-size:12px}@media(max-width:480px){.v720-row{grid-template-columns:minmax(0,1fr) minmax(82px,105px);gap:7px}.v720-edit,.v720-remove{grid-row:2;width:100%}}
+
+/* Stage 4: suggestions from actual ledger and unbudgeted spending */
+.v720-unbudgeted{margin-top:16px}.v720-unbudgeted h3{font-size:15px;margin:0 0 8px}.v720-unmatched-row{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px solid var(--line,#ddd)}
+
+/* Stage 6: read-only monthly, category and annual comparisons */
+.v720-table-wrap{overflow-x:auto;max-width:100%}.v720-table{width:100%;border-collapse:collapse;font-size:13px;min-width:430px}.v720-table th,.v720-table td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line,#ddd);white-space:nowrap}.v720-table th{font-weight:650}.v720-current{font-weight:700;background:rgba(125,125,125,.08)}.v720-negative{color:#d44b4b}.v720-unmatched-row strong{white-space:nowrap}
