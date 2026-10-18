@@ -1,0 +1,1 @@
+MyMoney V7.1.8 test: Calendar weekday headings use same seven-column grid as dates; calendar title, weekdays, hint, selected-day detail and empty state localize in Malay, English, Simplified and Traditional Chinese. No changes to financial storage or calculations. Deploy only to test site.

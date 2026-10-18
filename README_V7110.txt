@@ -1,0 +1,1 @@
+MyMoney V7.1.10: focused Bahasa Melayu repayment form, placeholder, debt balance dropdown and repayment history translation. No financial calculations or storage formats changed. Test only on independent test site. Back up JSON before deployment.

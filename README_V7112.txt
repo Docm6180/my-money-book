@@ -1,0 +1,1 @@
+MyMoney V7.1.12 TEST: focused Bahasa Melayu corrections in Records: category editor, quick actions, search, transaction payment names, account opening balance, placeholders and transfer labels. Does not write to financial localStorage. Back up JSON before testing. Deploy only to my-money-v6-test. User-created names remain as entered. Browser testing required.

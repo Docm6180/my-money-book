@@ -1,0 +1,1 @@
+MyMoney V7.1.9: Focused Malay translation improvements for debt forms, list, interest settings and repayment labels. Financial data and calculation logic unchanged. Test on the independent test site first.

@@ -1,0 +1,1 @@
+V7.1.14 stability hotfix: remove v7113 MutationObserver that can trigger an infinite loop when writing textContent; add guards to avoid redundant DOM writes. No financial data or storage changes. Test only.

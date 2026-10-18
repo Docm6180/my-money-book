@@ -1,0 +1,1 @@
+MyMoney V7.1.11: Malay UI translation focused on Records, categories, transactions, accounts, and transfers. Existing localStorage and calculations unchanged. Deploy to TEST repo only. Back up JSON first. User-entered names are not translated. Test all functions.
