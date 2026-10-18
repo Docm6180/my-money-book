@@ -2,12 +2,13 @@
 (()=>{'use strict';
 const STORE='mymoney-v640-templates', LEDGER='mymoney-local-v1';
 const $=id=>document.getElementById(id);
-const lang=()=>{try{return JSON.parse(localStorage.getItem('mymoney-v604-settings')||'{}').language||document.documentElement.lang||'zh-CN'}catch{return document.documentElement.lang||'zh-CN'}};
+const lang=()=>{try{return JSON.parse(localStorage.getItem('mymoney-v604-preferences')||'{}').lang||document.documentElement.lang||'zh-CN'}catch{return document.documentElement.lang||'zh-CN'}};
 const words={
+'ms':["Rekod Pantas & Templat Kegemaran", "Rekod Pendapatan Pantas", "Rekod Perbelanjaan Pantas", "Simpan Rekod Semasa sebagai Templat", "Templat Tersimpan", "Tiada templat disimpan", "Gunakan", "Padam", "Carian Transaksi", "Cari kategori, catatan, amaun atau tarikh", "Semua", "Pendapatan", "Perbelanjaan", "Tiada rekod sepadan", "Masukkan nama templat", "Masukkan amaun yang sah dahulu", "Templat disimpan. Semak sebelum menyimpan transaksi.", "Padam templat ini?", "Carian tidak mengubah rekod", "Hasil Carian"],
 'zh-CN':['快捷记账与常用交易','快速记收入','快速记支出','保存当前交易为模板','常用交易模板','没有保存的模板','应用','删除','交易搜索','搜索分类、备注、金额或日期','全部','收入','支出','未找到匹配记录','请输入模板名称','请先填写有效金额','已保存模板。保存交易前仍需确认。','删除这个模板？','只搜索交易，不修改记录','搜索结果'],
 'zh-TW':['快速記帳與常用交易','快速記收入','快速記支出','儲存目前交易為範本','常用交易範本','尚未儲存範本','套用','刪除','交易搜尋','搜尋分類、備註、金額或日期','全部','收入','支出','找不到符合的記錄','請輸入範本名稱','請先填寫有效金額','已儲存範本。儲存交易前仍需確認。','刪除這個範本？','只搜尋交易，不修改記錄','搜尋結果'],
 'en':['Quick Entry & Favorites','Quick Income','Quick Expense','Save Current Entry as Template','Saved Templates','No templates saved','Apply','Delete','Transaction Search','Search category, note, amount or date','All','Income','Expense','No matching records','Enter a template name','Enter a valid amount first','Template saved. Review before saving a transaction.','Delete this template?','Search is read-only','Search Results']};
-function w(i){const l=lang().toLowerCase();return (words[l.startsWith('en')?'en':l.includes('tw')||l.includes('hant')?'zh-TW':'zh-CN'])[i]}
+function w(i){const l=lang().toLowerCase();return (words[l.startsWith('ms')?'ms':l.startsWith('en')?'en':l.includes('tw')||l.includes('hant')?'zh-TW':'zh-CN'])[i]}
 function escape(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function getTemplates(){try{const a=JSON.parse(localStorage.getItem(STORE)||'[]');return Array.isArray(a)?a.slice(0,30):[]}catch{return []}}
 function setTemplates(a){try{localStorage.setItem(STORE,JSON.stringify(a.slice(0,20)));return true}catch{alert('Storage unavailable');return false}}
