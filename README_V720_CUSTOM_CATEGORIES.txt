@@ -1,0 +1,1 @@
+MyMoney V7.2.0 custom budget categories test. Categories are user-created; existing saved budget categories are preserved. Add/remove only affects budget settings, not transactions. Click Save Budget to persist changes. Test on test repository only.
