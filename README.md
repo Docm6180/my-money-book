@@ -8,3 +8,4 @@
 5. 自定义负债类别加入 JSON 备份和恢复。
 
 部署：上传 index.html、upgrade-v5.html、sw.js 至 GitHub 仓库根目录。更新前先在旧版导出 JSON 备份。不要把私人备份上传公开 GitHub。
+MyMoney V7.4.12 deployment retry
