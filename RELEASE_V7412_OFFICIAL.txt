@@ -1,0 +1,6 @@
+MyMoney NEXT V7.4.12 OFFICIAL
+Based on the user-approved V7.4.12 TEST build.
+Only release labels and service worker cache identifier were changed.
+Existing localStorage keys and financial logic were not modified.
+IMPORTANT: Export a full JSON backup from the official website before replacing the website files. Do not clear site data or upload the JSON backup to GitHub.
+Upload the contents of this ZIP to the root of the official GitHub Pages repository.

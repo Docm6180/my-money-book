@@ -1,4 +1,4 @@
-const CACHE='mymoney-local-v7412-malay-comprehensive';
+const CACHE='mymoney-local-v7412-official';
 const FILES=['./','./index.html','./manifest.json','./icon.svg','./upgrade-v5.html','./v60.css','./v60.js','./v604.js','./v608.js','./v610.css','./v610.js','./v620.css','./v620.js','./v630.css','./v630.js','./v640.css','./v640.js','./v650.css','./v650.js','./v660.js','./v670.js','./v690.js','./v710.js','./v715.js','./v716.js','./v7111.js','./v7112.js','./v7113.js','./v7115.js','./v7116.js','./v720.js','./v720.css','./v730.js','./v731csv.js','./v732.css','./v736-enterprise.css','./v737-enterprise-all.css','./v740-next.css','./v741-english-fix.js','./v742-english-consistency.js','./v743-english-completion.js','./v744-english-receivables-cleanup.js','./v746-collection-english.js','./v7410-malay-ui.js'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('mymoney-local-')&&k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]))});
