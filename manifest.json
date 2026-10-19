@@ -1,1 +1,1 @@
-{"name":"MyMoney","short_name":"MyMoney","start_url":"./index.html","display":"standalone","background_color":"#f3f6f5","theme_color":"#176b57","description":"个人记账与负债管理，本机保存数据","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{"name":"MyMoney","short_name":"MyMoney","start_url":"./index.html","display":"standalone","background_color":"#f2f5fa","theme_color":"#10243b","description":"个人记账与负债管理，本机保存数据","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}

@@ -1,0 +1,1 @@
+MyMoney NEXT V7.4.3 TEST: English interface consistency fixes for accounting and receivables. Presentation-only patch. Financial records and storage keys are unchanged. Test all four languages and backups before release.

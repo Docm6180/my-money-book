@@ -1,0 +1,1 @@
+V7.3.0 TEST: Navigation order: Home, Records, Debts, Collection Records, Budget, Bills, Reports, Settings & Backup. Legacy transaction CSV box hidden; old button retained invisibly for compatibility. Three-group CSV and JSON backup retained. No finance data or storage keys changed.
