@@ -72,5 +72,5 @@ $('v720Categories').addEventListener('change',e=>{if(e.target.matches('[data-bud
 $('v720Save').addEventListener('click',save);$('v720Copy').addEventListener('click',copy);
 nav.addEventListener('click',()=>{render()});document.addEventListener('click',e=>{if(e.target.closest('[data-tab]')&&e.target!==nav){nav.textContent='▤ '+tx('tab')}});
 // Read fresh ledger on tab opening, avoiding observers or repeated DOM writes.
-render();const header=document.querySelector('header h1');if(header)header.textContent='MyMoney V7.2.0 · Test';
+render();const header=document.querySelector('header h1');if(header)header.textContent='MyMoney V7.2.0';
 })();
