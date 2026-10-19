@@ -17,6 +17,6 @@ myPanel.querySelector('#v603OpenBackup')?.addEventListener('click',()=>backupNav
 // Reuse existing transaction and debt workflows; do not duplicate financial calculations.
 document.querySelectorAll('[data-v603-action]').forEach(b=>b.addEventListener('click',()=>{const action=b.dataset.v603Action;nav?.querySelector(`[data-tab="${action==='repay'?'debts':'transactions'}"]`)?.click();if(action==='repay')document.querySelector('[data-debt-view="repay"]')?.click();if(action==='transfer'){const select=document.getElementById('entryMode');if(select){select.value='transfer';select.dispatchEvent(new Event('change',{bubbles:true}))}}window.scrollTo({top:0,behavior:'smooth'})}));
 const privacy=document.getElementById('v603Privacy');privacy?.addEventListener('click',()=>{const hidden=document.getElementById('home')?.classList.toggle('v603-private');privacy.setAttribute('aria-pressed',String(!!hidden));privacy.textContent=hidden?'◎ 显示金额':'◉ 隐藏金额'});
-const title=document.querySelector('header h1');if(title)title.textContent='MyMoney V7.1.2';const subtitle=document.querySelector('header p');if(subtitle)subtitle.textContent='个人财务 · MYR · 本机储存 · V7.1 账单独立测试版';
+const title=document.querySelector('header h1');if(title)title.textContent='MyMoney V7.1.2';const subtitle=document.querySelector('header p');if(subtitle)subtitle.textContent='个人财务 · MYR · 本机储存 · V7.2.0 正式版';
 try{applyTheme(localStorage.getItem(THEME_KEY)||'blue')}catch(e){applyTheme('blue')}
 })();
