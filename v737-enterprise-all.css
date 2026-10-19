@@ -1,0 +1,46 @@
+/* MyMoney V7.3.0 TEST — unified enterprise visual layer. CSS only; financial logic and storage untouched. */
+:root{--enterprise-navy:#183451;--enterprise-blue:#285b90;--enterprise-line:#d8e1ec;--enterprise-shadow:0 2px 9px rgba(24,52,81,.055)}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+body:not([data-theme="dark"]){--bg:#f2f5f9;--line:#d9e2ec;--green:#245c90;--blue:#245c90}
+.wrap{max-width:1200px!important;padding-bottom:36px}
+body>header{background:linear-gradient(115deg,#152f4e,#2b537b)!important;color:#fff!important;border-bottom:3px solid #4e88bf;padding:22px max(18px,calc((100vw - 1200px)/2))!important}
+body>header h1{font-size:clamp(20px,2.4vw,28px);font-weight:780;letter-spacing:-.025em;margin:0 0 4px}
+body>header p{color:#d8e6f5!important;font-size:12px;margin:0}
+.notice{font-size:12px!important;border-radius:7px!important;border:1px solid var(--line)!important;padding:10px 14px!important;margin:14px 0!important}
+.tabs{display:flex;flex-wrap:wrap;gap:5px!important;margin:12px 0 17px!important;padding:7px!important;border:1px solid var(--line);border-radius:9px;background:var(--card);box-shadow:var(--enterprise-shadow)}
+.tabs button{font-size:12px!important;font-weight:650!important;border-radius:5px!important;padding:9px 13px!important;border:1px solid transparent!important;background:transparent!important;color:var(--text)!important;transition:background .15s}
+.tabs button:hover{background:var(--bg)!important}
+.tabs button.active{background:#245c90!important;color:#fff!important;box-shadow:0 1px 4px #17344b20}
+.panel{min-width:0}
+.panel>.box,.panel .box,.panel .metric,.panel .item{border-radius:8px;box-shadow:var(--enterprise-shadow)}
+.panel .box{border:1px solid var(--line);padding:15px 17px;margin-bottom:12px}
+.panel h2{font-size:17px;letter-spacing:-.01em}
+.panel h3{font-size:14px}
+.panel .cards{gap:10px}
+.panel .metric{padding:15px!important;border:1px solid var(--line)}
+.panel .metric strong{font-size:clamp(18px,2vw,23px);font-variant-numeric:tabular-nums}
+.panel .grid{gap:11px 13px}
+.panel .field label{font-size:12px;font-weight:650;margin-bottom:5px}
+.panel input:not([type="checkbox"]):not([type="radio"]),.panel select,.panel textarea{border:1px solid var(--line);border-radius:5px;min-height:39px;font-size:13px;max-width:100%}
+.panel input:focus-visible,.panel select:focus-visible,.panel textarea:focus-visible,.tabs button:focus-visible{outline:2px solid #74a6d7;outline-offset:2px}
+.panel button,.panel .btn{font-weight:650;font-size:12px;border-radius:5px}
+.panel .btn{padding:9px 13px}
+.panel .actions{gap:8px}
+.panel table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+.panel th{background:var(--bg);font-weight:750;text-align:left;border-bottom:1px solid var(--line)}
+.panel th,.panel td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+.panel tr:hover td{background:rgba(103,144,185,.055)}
+.panel .hint,.panel small{font-size:11px;line-height:1.5}
+.panel .item{border:1px solid var(--line)}
+#home .v603-welcome{border-radius:9px!important;background:linear-gradient(115deg,#173451,#2b537b)!important;color:#fff!important;padding:20px!important}
+#home .v603-welcome h2,#home .v603-welcome p,#home .v603-welcome small{color:#fff!important}
+#debts>.box:first-child,#receivables>.box:first-child,#analytics>.box:first-child,#backup>.box:first-child{border-top:3px solid #366eaa}
+#bills .box,#budget .box{border-top-color:var(--line)}
+#transactions .v736-page-head{box-shadow:var(--enterprise-shadow)}
+/* Retain the existing blue/green/dark theme selectors and accessibility behaviors. */
+html[data-theme="dark"] body>header{background:linear-gradient(115deg,#101f34,#253e5d)!important}
+html[data-theme="dark"] .tabs button.active{background:#396f9e!important}
+html[data-theme="dark"] .panel th{background:var(--card)}
+html[data-theme="dark"] #home .v603-welcome{background:linear-gradient(115deg,#1c3451,#2b4667)!important}
+@media(max-width:700px){.wrap{padding-left:11px!important;padding-right:11px!important}.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding:6px!important}.tabs button{flex:0 0 auto;padding:9px 10px!important}.panel .box{padding:13px!important}.panel th,.panel td{padding:8px 7px}.panel .grid{gap:9px}.panel .metric{padding:12px!important}body>header{padding:16px 13px!important}}
+@media(max-width:390px){.tabs button{font-size:11px!important}.panel .box{padding:11px!important}.panel table{font-size:11px}}

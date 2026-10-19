@@ -1,0 +1,39 @@
+/* MyMoney V7.3.0 TEST — enterprise accounting UI. Visual-only: no storage or transaction logic changes. */
+#transactions.v736-ledger{--v736-navy:#17304f;--v736-steel:#48617d;--v736-stroke:#d7e1ed;--v736-pale:#f3f6fa;--v736-accent:#245c97;color:var(--text)}
+#transactions .v736-page-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 15px;padding:20px 23px;background:linear-gradient(105deg,#17304f,#274f79);color:#fff;border-radius:12px;box-shadow:0 5px 15px #122d4a1b}
+#transactions .v736-eyebrow{font-size:10px;font-weight:750;letter-spacing:.14em;color:#a8c8e9;margin-bottom:7px}
+#transactions .v736-page-head h2{font-size:23px;line-height:1.2;margin:0 0 7px;color:#fff}
+#transactions .v736-page-head p{font-size:12px;color:#d6e5f4;margin:0}
+#transactions .v736-edition{border:1px solid #ffffff55;background:#ffffff12;padding:8px 11px;border-radius:5px;font-size:10px;letter-spacing:.06em;white-space:nowrap;font-weight:700}
+#transactions .box{border:1px solid var(--line);border-radius:9px;box-shadow:0 1px 5px #172b4b0a;padding:18px 20px;margin-bottom:12px}
+#transactions .box h2{font-size:16px;letter-spacing:.01em;margin:0 0 14px}
+#transactions .v736-action-panel{padding:17px 20px 14px;border-top:3px solid #245c97}
+#transactions .v736-section-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}
+#transactions .v736-section-heading h2{margin:3px 0 9px;font-size:17px}
+#transactions .v736-kicker{font-size:10px;font-weight:800;letter-spacing:.1em;color:var(--muted)}
+#transactions .v736-caption{font-size:11px;color:var(--muted)}
+#transactions .v732-entry-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:7px 0 9px}
+#transactions .v732-entry-btn{min-height:65px;border:1px solid var(--line);border-radius:7px;background:var(--card);color:var(--text);font-size:13px;font-weight:750;line-height:1.4;padding:11px 8px;transition:border-color .15s,background .15s,box-shadow .15s}
+#transactions .v732-entry-btn:hover{border-color:#6593bf;background:var(--bg)}
+#transactions .v732-entry-btn.v732-active,#transactions .v732-entry-btn[aria-pressed="true"]{background:#e9f1fa;color:#164e84;border:1px solid #467bac;box-shadow:inset 0 -3px 0 #245c97}
+#transactions #v733EntryHint{font-size:12px;color:var(--muted);background:var(--bg);border-left:3px solid #4d82b4;padding:9px 12px;margin:10px 0 0;border-radius:3px}
+#transactions .v736-form-panel{border-top:2px solid #d4e3f2}
+#transactions .v736-form-panel h2{border-bottom:1px solid var(--line);padding-bottom:12px}
+#transactions .grid{gap:11px 14px}
+#transactions .field label{font-size:12px;font-weight:650;color:var(--text);margin-bottom:5px}
+#transactions .field input,#transactions .field select,#transactions .field textarea{min-height:39px;border-radius:5px;padding:8px 10px;font-size:13px}
+#transactions .field input:focus,#transactions .field select:focus{outline:2px solid #7da9d9;outline-offset:1px}
+#transactions .btn{border-radius:5px;font-size:12px;font-weight:700;padding:9px 15px}
+#transactions .actions{gap:8px;margin-top:13px}
+#transactions .hint{font-size:11px;line-height:1.6}
+#transactions .v736-account-panel>.box:first-child{border-left:3px solid #4777a7;background:var(--bg)}
+#transactions .v736-account-panel>.box:first-child h2{margin-bottom:5px}
+#transactions .item{border-color:var(--line)}
+#transactions table{width:100%;border-collapse:collapse;font-size:12px}
+#transactions th{background:var(--bg);color:var(--text);font-weight:700;text-align:left}
+#transactions td,#transactions th{padding:9px 10px;border-bottom:1px solid var(--line)}
+#transactions .v736-account-panel #accountTotals{margin:10px 0}
+html[data-theme="dark"] #transactions .v736-page-head{background:linear-gradient(105deg,#1d3554,#284567)}
+html[data-theme="dark"] #transactions .v732-entry-btn.v732-active,html[data-theme="dark"] #transactions .v732-entry-btn[aria-pressed="true"]{background:#304a6b;color:#dbeafe;border-color:#83b2e5}
+@media(min-width:900px){#transactions .v736-page-head,#transactions .box{max-width:none}}
+@media(max-width:650px){#transactions .v736-page-head{padding:16px;align-items:flex-start}#transactions .v736-page-head h2{font-size:19px}#transactions .v736-edition{display:none}#transactions .box{padding:14px}#transactions .v732-entry-buttons{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}#transactions .v732-entry-btn{min-height:53px;font-size:12px;padding:9px 5px}#transactions .v736-caption{display:none}}

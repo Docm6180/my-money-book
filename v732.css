@@ -1,0 +1,7 @@
+
+/* V7.3 TEST: independent income / expense / transfer actions */
+.v732-entry-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:10px 0 14px}
+.v732-entry-btn{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:13px;padding:14px 6px;font-size:15px;font-weight:700;cursor:pointer}
+.v732-entry-btn.v732-active{background:#2858a3;color:#fff;border-color:#2858a3}
+.v732-entry-btn:focus-visible{outline:3px solid #75a8ff;outline-offset:2px}
+@media(max-width:480px){.v732-entry-buttons{gap:6px}.v732-entry-btn{font-size:13px;padding:12px 3px}}
