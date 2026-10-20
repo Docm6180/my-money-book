@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17284c">
+<meta name="description" content="MyMoney 个人记账应用安装介绍：Android 手机安装指南与资料备份提醒。">
+<title>安装 MyMoney V7.4.12</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1429;--panel:#162440;--text:#f5f8ff;--muted:#b5c4df;--line:#344563;--accent:#6ba8ff}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI","Noto Sans SC",sans-serif;background:radial-gradient(circle at 85% 0%,#403174 0,transparent 35%),linear-gradient(160deg,#11284e,var(--bg) 65%);color:var(--text);min-height:100vh}main{max-width:740px;margin:auto;padding:28px 18px 70px}.hero{text-align:center;padding:30px 8px 22px}.logo{width:106px;height:106px;border-radius:24px;box-shadow:0 14px 40px #0007}.eyebrow{font-size:12px;letter-spacing:.18em;color:#b6cbf6;margin-top:20px}h1{font-size:clamp(32px,8vw,48px);margin:8px 0}p{line-height:1.75;color:var(--muted)}.version{display:inline-block;border:1px solid #7b90bd;border-radius:999px;padding:5px 13px;font-size:13px;color:#e2ebff}.actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:13px;padding:13px 18px;font-size:15px;font-weight:700;text-decoration:none;cursor:pointer;border:1px solid #7f9fdd;color:white;background:#2858ba;min-height:48px}.btn.secondary{background:#1d2c4a;border-color:#50658e}.panel{background:linear-gradient(160deg,#1a2b4a,#132039);border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:18px;box-shadow:0 10px 28px #0002}h2{font-size:21px;margin:0 0 12px}h3{font-size:16px;margin:0 0 7px}.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.feature{border:1px solid #35476c;border-radius:14px;padding:14px;background:#ffffff08}.feature p{font-size:13px;margin:0}.steps{padding-left:25px;line-height:1.85}.steps li{padding-left:5px;margin:8px 0;color:#e6edff}.note{border-left:3px solid #86b6ff;padding:7px 12px;background:#ffffff09;border-radius:4px;font-size:14px}.muted{font-size:13px}footer{text-align:center;margin-top:28px;color:#91a5c8;font-size:12px}a{color:#9dc4ff}#toast{min-height:22px;text-align:center;color:#bdeacb;font-size:14px;margin-top:10px}@media(max-width:420px){.features{grid-template-columns:1fr}.actions{flex-direction:column}.btn{width:100%}.panel{padding:18px}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<img class="logo" src="./mymoney-icon-192.png" alt="MyMoney 应用图标" width="106" height="106">
+<div class="eyebrow">PERSONAL FINANCE · MYR</div>
+<h1>MyMoney</h1>
+<span class="version">V7.4.12</span>
+<p>简单记录每一笔收支，管理账户、负债和预算。<br>适合 Android 手机使用的个人记账工具。</p>
+<div class="actions">
+<a class="btn" href="./index.html">打开 MyMoney</a>
+<button class="btn secondary" id="copy" type="button">复制分享链接</button>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+</section>
+<section class="panel"><h2>主要功能</h2><div class="features">
+<div class="feature"><h3>💰 日常记账</h3><p>记录收入、支出和内部转账。</p></div>
+<div class="feature"><h3>🏦 账户管理</h3><p>管理银行、电子钱包和现金余额。</p></div>
+<div class="feature"><h3>📋 负债与收款</h3><p>追踪借款、还款与应收款。</p></div>
+<div class="feature"><h3>📊 预算与报表</h3><p>查看月度预算、分类统计和报表。</p></div>
+<div class="feature"><h3>🔔 账单提醒</h3><p>管理定期账单与提醒事项。</p></div>
+<div class="feature"><h3>💾 备份与恢复</h3><p>支持导出 JSON 备份文件。</p></div>
+</div></section>
+<section class="panel"><h2>Android 手机安装步骤</h2>
+<ol class="steps"><li>使用 <strong>Google Chrome</strong> 打开此页面。</li><li>点击上方的 <strong>打开 MyMoney</strong>。</li><li>点击 Chrome 右上角的 <strong>⋮</strong> 菜单。</li><li>选择 <strong>安装应用</strong>，或 <strong>添加到主屏幕</strong>。</li><li>按照手机提示完成安装，然后从主屏幕打开 MyMoney。</li></ol>
+<p class="note">菜单名称可能因 Android 手机和 Chrome 版本而不同。若没有安装选项，可先使用网页版本。</p></section>
+<section class="panel"><h2>使用前请了解</h2>
+<p>MyMoney 目前主要将记账资料保存在使用者自己的浏览器／设备中。不同手机之间不会自动同步，分享安装链接也不会分享你的账目。</p>
+<p><strong>重要：</strong>请定期在「设置与备份」中导出完整 JSON 备份，并将备份妥善保存在安全的位置。卸载 App、清除浏览器网站资料或更换手机前，务必先确认备份可用。</p>
+<p class="muted">MyMoney 为 GitHub Pages 上提供的网页应用（PWA），并非 Google Play 商店安装包。</p>
+</section>
+<footer>MyMoney · V7.4.12 · 分享页面</footer>
+</main>
+<script>
+(function(){const button=document.getElementById('copy'),toast=document.getElementById('toast');button.addEventListener('click',async()=>{const url=new URL('./install.html',location.href).href;try{await navigator.clipboard.writeText(url);toast.textContent='已复制分享链接';}catch(e){toast.textContent='无法自动复制，请复制浏览器地址栏中的网址。';}})})();
+</script>
+</body></html>
